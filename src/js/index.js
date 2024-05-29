@@ -35,7 +35,7 @@ export const ASSETS = [...config.resources]
 
   const divReco = document.createElement('div')
   divReco.classList.add('settings__reco')
-  divReco.innerHTML = '(recommended)'
+  divReco.innerHTML = '(Recomendado)'
 
   switch (tier) {
     case 3:
