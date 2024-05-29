@@ -1,53 +1,36 @@
+# Zelda Wind Waker en JavaScript (Parte del Océano)
 
-![wind-waker-js (3)](https://github.com/Robpayot/zelda-project-public/assets/5593293/0353b1c6-8834-42c0-a01d-93222625ad2a)
+Este proyecto es una versión en JavaScript de la parte del océano de The Legend of Zelda: Wind Waker. Comenzó como un esfuerzo personal y evolucionó en un proyecto para compartir. Cualquier apoyo, como a través de Patreon, es muy apreciado.
 
+### Demo y Recursos Adicionales
+- **[Demo en Vivo](https://zelda-broslunas.vercel.app/)**
 
-# Zelda Wind Waker in JavaScript (Ocean part) - Meant to be a personal project at first
-[Link](https://wind-waker-js.vercel.app/)
+### Instrucciones de Instalación
 
-This took me some time and hard work to make so any support would be very appreciated 🙏🏻 [patreon webgl channel](https://www.patreon.com/user?u=50160165)
-Enjoy!
+1. **Clonar el repositorio** o descargar el proyecto en formato zip.
 
-You can check the youtube video explaining all the methods I used for this project 👀 [youtube video](https://youtu.be/IyAOCwUWkNE)
+2. **Abrir Terminal** y navegar a la carpeta del proyecto.
 
-## How to install
+3. **Instalar Dependencias**:
+    ```bash
+    npm install
+    ```
 
-Clone the repository or download it in zip format, then
+4. **Iniciar el Servidor de Desarrollo**:
+    ```bash
+    npm run dev
+    ```
 
-### Open Terminial
+### Estructura del Proyecto y Uso
 
-Navigate to projects folder
+- **Ubicación de los Archivos del Proyecto**: Utiliza la carpeta 'src' para todos los archivos del proyecto, incluyendo:
+  - HTML
+  - JavaScript
+  - SCSS
 
-Install dependencies
+- **Archivos de Configuración**:
+  - `vite.config.js`: Configura la entrada del proyecto en la carpeta 'src'.
+  - `.eslintrc`: Configura las reglas de linting.
+  - `.prettierrc`: Configura las reglas de formateo.
 
-```bash
-  npm install
-```
-
-Start the dev server
-
-```bash
-  npm run dev
-```
-
-## How to Use
-
--   Use the 'src' folder for all project files.
-    -   HTML
-    -   JS
-    -   SCSS
--   vite.config.js file sets up project input to 'src' folder.
--   Use eslintrc file to configure linting rules
--   Use prettierrc file to configure formatting rules
-
-## Useful links
-- [Threejs docs](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
-- [GSAP docs](https://greensock.com/docs/)
-- [Vite docs](https://vitejs.dev/config/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-
-## License
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+Este proyecto muestra tus habilidades y esfuerzo, y ofrece una experiencia nostálgica para los fans del juego Wind Waker. ¡Feliz navegación!

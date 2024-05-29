@@ -8,13 +8,7 @@
     <script type="module" defer src="./js/index.js"></script>
     <title>Zelda | Broslunas</title>
     <!-- meta tags example -->
-    <meta
-      name="description"
-      content="Hi! I'm Robin Payot a creative developer making immersive websites since 2015 and a fan of WebGL. Zelda: The Wind Waker is one of my favorite game and I tried to make the ocean part in JavaScript/WebGL, explore and play!"
-    />
-    <meta name="keywords" content="zelda, wind, waker, js, webgl, threejs, robin, payot, developer" />
-    <meta name="author" content="robin payot, robpayot@gmail.com" />
-    <meta name="developer" content="" />
+
     <link rel="canonical" href="https://zelda-broslunas.vercel.app/" />
 
     <!-- Favicon -->
@@ -33,13 +27,14 @@
         <!-- LOADING -->
         <div data-loading class="loading visible">
           <div class="loading__content">
-            <h2 class="loading__title h3">Cargando</h2>
+            <h2 class="loading__title h3">Cargando
+            </h2>
           </div>
         </div>
         <!-- SETTINGS -->
         <div data-settings class="settings visible">
           <div class="settings__content">
-            <h2 class="settings__title h2">Elige una calidad</h2>
+            <h2 class="settings__title h2">Elige la calidad</h2>
             <div class="separator">
               <img src="/icons/selector2-alpha.png" alt="" />
               <span class="separator__line"></span>
@@ -57,7 +52,7 @@
         <!-- MODE -->
         <div data-mode class="mode visible">
           <div class="mode__content">
-            <h2 class="mode__title h2">Elige un modo de juego</h2>
+            <h2 class="mode__title h2">Elige tu modo de juego</h2>
             <div class="separator">
               <img src="/icons/selector2-alpha.png" alt="" />
               <span class="separator__line"></span>
@@ -77,7 +72,8 @@
         <!-- MENU -->
         <div data-menu class="menu">
           <button aria-label="Mode" data-menu-btn="mode" class="menu__button h3-reggae">Modo</button>
-          <button aria-label="Link" data-menu-btn="link" class="menu__button h3-reggae">Enlaces</button>
+          <button aria-label="Link" data-menu-btn="link" class="menu__button h3-reggae">Enlace</button>
+          <button aria-label="About" data-menu-btn="about" class="menu__button h3-reggae">Sobre mi</button>
 
           <div class="footer touch-only">
             <div class="separator touch-only">
@@ -133,14 +129,14 @@
                   <path class="cls-2-sound sound-line" d="m189.12,269.44L3.61,2.69" />
                 </svg>
               </div>
-              <a href="https://www.youtube.com/channel/UCKpvwfmVlv8773Vr7KWPPRg" target="_blank" rel="noopener" class="footer__link">
+              <a href="https://www.youtube.com/@Broslunas0" target="_blank" rel="noopener" class="footer__link">
                 <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="56" height="40" viewBox="0 0 56 40">
                   <path
                     d="m53.12,2.86c2.55,2.65,2.88,6.85,2.88,17.14s-.33,14.5-2.88,17.14c-2.55,2.65-5.21,2.86-25.12,2.86s-22.56-.21-25.11-2.86C.33,34.5,0,30.29,0,20S.33,5.5,2.89,2.86,8.09,0,28,0s22.56.21,25.12,2.86Zm-29.65,25.62l13.6-8.04-13.6-7.92v15.96Z"
                   />
                 </svg>
               </a>
-              <a href="https://twitter.com/BrosLunas" target="_blank" rel="noopener" class="footer__link">
+              <a href="https://twitter.com/Broslunas" target="_blank" rel="noopener" class="footer__link">
                 <svg class="footer__icon" id="svg5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000.78 936.69">
                   <g id="layer1">
                     <path
@@ -181,12 +177,26 @@
             <p class="controls__text t-button-controls">F</p>
           </button>
         </div>
+
+        <div data-about class="about">
+          <p class="about__text text-2">
+            Hola! Soy
+            <a href="https://broslunas.vercel.app/" target="_blank">Broslunas</a>
+
+          
+          <div class="separator">
+            <img src="/icons/selector2-alpha.png" alt="" />
+            <span class="separator__line"></span>
+            <img src="/icons/selector2-alpha.png" alt="" />
+          </div>
+          <button aria-label="Close" data-about-btn="about" class="about__button h3-reggae button">Cerrar</button>
+        </div>
         <div data-treasure class="treasure">
           <p class="treasure__text text-2">
-            Felicidades! ¡Has encontrado los últimos fragmentos de la Trifuerza! Has ganado la espada maestra.
+            ¡Felicidades! ¡Has encontrado los últimos fragmentos de la Trifuerza! Has ganado la espada maestra.
             <img class="shield" src="/icons/master_sword.png" alt="" /> y escudo de espejo
             <img class="shield" src="/icons/mirror_shield.png" alt="" />. ¡Tu barco ahora va 2 veces más rápido! Continuar a
-            ¡Explora o prueba el modo de juego Ruppee!
+            ¡Explora o prueba el modo de juego Gemas!
           </p>
           <div class="separator">
             <img src="/icons/selector2-alpha.png" alt="" />
@@ -194,13 +204,13 @@
             <img src="/icons/selector2-alpha.png" alt="" />
           </div>
           <button aria-label="Close" data-treasure-btn="treasure" class="treasure__button h3-reggae button">
-            Close
+            Cerrar
           </button>
         </div>
         <!-- Game -->
         <div data-game class="game">
           <div class="game__overlay">
-            <h2 class="game__overlay__title h2-reggae">¡Coge un máximo de rupias!</h2>
+            <h2 class="game__overlay__title h2-reggae">¡Consigue el maximo numero de Gemas!</h2>
             <p class="game__overlay__text text-1 touch-hidden">
               Utilice las flechas izquierda y derecha para navegar
               <svg
@@ -236,7 +246,7 @@
                 />
                 <polygon points="63.9 40.7 71.2 37.1 63.9 33.4 63.9 40.7" />
               </svg>
-             y presiona el espacio
+              y presiona espacio
               <svg
                 class="keyboard-space"
                 id="Layer_1"
@@ -259,9 +269,9 @@
             <div class="game__end__content">
               <img data-game-end-img src="#" class="game__end__img" />
               <div class="game__end__screenshot">
-                <p class="game__end__title h2-reggae">Felicidades!</p>
-                <p class="game__end__text h3">Tu puntuacion: <span data-game-end-score></span></p>
-                <p class="game__end__text h3">Mejor puntuacion: <span data-game-end-best>0</span></p>
+                <p class="game__end__title h2-reggae">¡Felicidades!</p>
+                <p class="game__end__text h3">Tu Puntuacion: <span data-game-end-score></span></p>
+                <p class="game__end__text h3">Mejor Puntuacion: <span data-game-end-best>0</span></p>
               </div>
               <div class="separator">
                 <img src="/icons/selector2-alpha.png" alt="" />
@@ -273,7 +283,7 @@
                 href="#"
                 download="best-score-wind-waker-js.png"
                 class="game__end__dl h4-reggae button"
-                >Descargar puntuacion
+                >Descargar Puntuacion
               </a>
               <button aria-label="Share on X" data-game-end-share-x class="game__end__share h4-reggae button">
                 <span>Compartir en</span>
@@ -329,7 +339,7 @@
               <div data-rupees-numbers class="hud__rupees__numbers"></div>
             </div>
             <div class="hud__best">
-              <div class="hud__best__text h3">Mejor puntuacion: <span data-rupees-best class="hud__best__score">0</span></div>
+              <div class="hud__best__text h3">Mejor Puntuacion: <span data-rupees-best class="hud__best__score">0</span></div>
             </div>
             <div class="separator">
               <img src="/icons/selector2-alpha.png" alt="" />
@@ -366,7 +376,7 @@
           <div class="explore__overlay explore__overlay--tuto-1">
             <h2 class="explore__overlay__title h2-reggae">Explora el Oceano</h2>
             <p class="explore__overlay__text text-1 touch-hidden">
-              Utilice las flechas para navegar
+              Utilice las teclas de flecha para navegar
               <svg
                 class="keyboard-arrows"
                 id="Layer_1"
@@ -391,7 +401,7 @@
                 />
                 <polygon points="63.9 40.7 71.2 37.1 63.9 33.4 63.9 40.7" />
               </svg>
-              y presiona el espacio
+              y presiona espacio
               <svg
                 class="keyboard-space"
                 id="Layer_1"
@@ -414,8 +424,8 @@
                 viewBox="0 0 13.25 19.74"
               >
                 <path
-                  d="m13.01,8.02L.82.09C.66-.02.45-.03.28.06c-.17.09-.28.27-.28.47v14.65c0,.2.11.39.3.48.18.09.4.07.56-.06l3.41-2.62,3.52,6.47c.1.18.28.28.47.28.09,0,.17-.02.25-.07l3.74-2.03c.26-.14.35-.46.21-.72l-3.52-6.48,3.96-1.47c.19-.07.32-.24.34-.44.02-.2-.07-.39-.24-.5Zm-5.02,1.63c-.15.05-.26.17-.31.31-.05.15-.04.31.03.44l3.56,6.55-2.81,1.52-3.56-6.55c-.07-.14-.2-.23-.36-.27-.04,0-.07-.01-.11-.01-.12,0-.23.04-.32.11l-3.04,2.34V1.52l10.48,6.82-3.55,1.32Z"/>
-                </svg>
+                  d="m13.01,8.02L.82.09C.66-.02.45-.03.28.06c-.17.09-.28.27-.28.47v14.65c0,.2.11.39.3.48.18.09.4.07.56-.06l3.41-2.62,3.52,6.47c.1.18.28.28.47.28.09,0,.17-.02.25-.07l3.74-2.03c.26-.14.35-.46.21-.72l-3.52-6.48,3.96-1.47c.19-.07.32-.24.34-.44.02-.2-.07-.39-.24-.5Zm-5.02,1.63c-.15.05-.26.17-.31.31-.05.15-.04.31.03.44l3.56,6.55-2.81,1.52-3.56-6.55c-.07-.14-.2-.23-.36-.27-.04,0-.07-.01-.11-.01-.12,0-.23.04-.32.11l-3.04,2.34V1.52l10.48,6.82-3.55,1.32Z"
+                /></svg
               >Haga clic y arrastre a cualquier lugar para mover la cámara y desplácese para hacer zoom
             </p>
             <p class="game__overlay__text text-1 touch-only">
@@ -427,7 +437,7 @@
             <button aria-label="OK" data-explore-start="first" class="h3-reggae button">Ok</button>
           </div>
           <div class="explore__overlay explore__overlay--tuto-2">
-            <h2 class="explore__overlay__title h2-reggae">Encuentra la Trifuerza</h2>
+            <h2 class="explore__overlay__title h2-reggae">Find the Triforce</h2>
             <img src="/img/light-ring.jpg" class="explore__overlay__image" />
             <p class="explore__overlay__text text-1 touch-hidden">
               Si ves una luz brillante como esta, usa el gancho. <img class="icon-hook" src="/icons/hook.png" /> y presiona el espacio
@@ -446,10 +456,10 @@
             </p>
             <p class="explore__overlay__text text-1 touch-only">
               Si ves una luz brillante como esta, usa el gancho. <img class="icon-hook" src="/icons/hook.png" /> y
-              Presione "Guardar" para encontrar un tesoro.
+              Pulsa "Guardar" para encontrar un tesoro.
             </p>
             <p class="explore__overlay__text text-1">
-              ¡Quizás encuentres un fragmento de la Trifuerza! <img class="icon-shard" src="/icons/shard.png" />
+              Quizás encuentres un fragmento de la Trifuerza! <img class="icon-shard" src="/icons/shard.png" />
             </p>
             <button aria-label="OK" data-explore-start="final" class="h3-reggae button">Ok</button>
           </div>
@@ -462,7 +472,7 @@
             <img src="/img/islands/island_4.png" class="explore__islands__item" alt="Forest Haven" />
             <img src="/img/islands/island_5.png" class="explore__islands__item" alt="Outset Island" />
           </div>
-          <div data-explore-message class="explore__too-close h3-reggae">Too close!</div>
+          <div data-explore-message class="explore__too-close h3-reggae">¡Demasiado Cerca!</div>
           <div class="hud">
             <div data-explore-hearts class="hud__hearts"></div>
             <div class="hud__rupees">
@@ -576,7 +586,7 @@
               >Descargar
             </a>
             <button aria-label="Share on X" data-screenshot-share-x class="screenshot__share h4-reggae button">
-              <span>Compartir en</span>
+              <span>Share on</span>
               <svg class="screenshot__icon" id="svg5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000.78 936.69">
                 <g id="layer1">
                   <path
@@ -620,7 +630,7 @@
               <img src="/icons/selector2-alpha.png" alt="" />
             </div>
             <button aria-label="Close" data-screenshot-btn class="screenshot__close h4-reggae button-small">
-              Close
+              Cerrar
             </button>
           </div>
         </div>
@@ -689,7 +699,7 @@
             </svg>
           </a>
           <a
-            href="https://github.com/Robpayot/zelda-project-public"
+            href="https://github.com/BrosLunas/broslunas-zelda"
             target="_blank"
             rel="noopener"
             class="footer__link"
@@ -712,9 +722,9 @@
       <canvas class="scene"></canvas>
       <div data-cookie class="cookie">
         <div class="cookie__content">
-          <div class="cookie__text h3">Coockies</div>
-          <button aria-label="Accept cookie" data-cookie-button class="cookie__button text-2">Aceptar</button>
-          <button aria-label="Refuse cookie" data-cookie-button-no class="cookie__no text-2">No Aceptar</button>
+          <div class="cookie__text h3">Usamos cookies</div>
+          <button aria-label="Accept cookie" data-cookie-button class="cookie__button text-2">Ok</button>
+          <button aria-label="Refuse cookie" data-cookie-button-no class="cookie__no text-2">No</button>
         </div>
       </div>
     </main>
