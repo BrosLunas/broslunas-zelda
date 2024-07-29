@@ -3,7 +3,7 @@
 Este proyecto es una versión en JavaScript de la parte del océano de The Legend of Zelda: Wind Waker. Comenzó como un esfuerzo personal y evolucionó en un proyecto para compartir. Cualquier apoyo, como a través de Patreon, es muy apreciado.
 
 ### Demo y Recursos Adicionales
-- **[Demo en Vivo](https://zelda-broslunas.vercel.app/)**
+- **[Demo en Vivo](https://zelda.broslunas.com/)**
 
 ### Instrucciones de Instalación
 
